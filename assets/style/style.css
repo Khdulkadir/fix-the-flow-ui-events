@@ -14,7 +14,7 @@
 body {
   margin: 2rem;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   background: var(--secondary);
 }
@@ -79,3 +79,94 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+.grow {
+  animation-name: grow;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  50% {
+    transform: scale(1.2); /* Slightly larger size */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
+}
+
+.shrink {
+  animation-name: shrink;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  50% {
+    transform: scale(0.8); /* Slightly smaller size */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate 360 degrees */
+  }
+}
+
+.jiggle {
+  animation-name: jiggle;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(-5deg); /* Rotate left */
+  }
+  50% {
+    transform: rotate(5deg); /* Rotate right */
+  }
+  100% {
+    transform: rotate(-5deg); /* Return to initial rotation */
+  }
+}
+
+.fly {
+  animation-name: fly;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0vw); /* Move across the screen */
+  }
+  50% {
+    transform: translateX(100vw); /* Move across the screen */
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
