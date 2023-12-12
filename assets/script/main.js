@@ -78,3 +78,36 @@ interaction7.addEventListener("animationend", GrowHandler);
 function GrowHandler() {
   interaction7.classList.toggle("grow");
 }
+
+/*=====Opdracht 8=====*/
+
+let interaction8 = document.querySelector("a:nth-of-type(7)");
+
+interaction8.addEventListener("mouseenter", GrowHandler);
+interaction8.addEventListener("animationend", GrowHandler);
+
+function GrowHandler() {
+  interaction8.classList.toggle("grow");
+}
+
+/*=====Opdracht 9=====*/
+
+let interaction9 = document.querySelector("a:nth-of-type(8)");
+
+interaction9.addEventListener("mouseleave", GrowHandler);
+interaction9.addEventListener("animationend", GrowHandler);
+
+function GrowHandler() {
+  interaction9.classList.toggle("grow");
+}
+
+/*=====Opdracht 10=====*/
+
+let interaction10 = document.querySelector("a:nth-of-type(9)");
+
+interaction10.addEventListener("focus", GrowHandler);
+interaction10.addEventListener("animationend", GrowHandler);
+
+function GrowHandler() {
+  interaction10.classList.toggle("grow");
+}
