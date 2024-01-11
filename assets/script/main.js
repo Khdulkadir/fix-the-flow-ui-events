@@ -13,10 +13,10 @@ function jumpHandler() {
 
 let interaction2 = document.querySelector("a:nth-of-type(1)");
 
-interaction2.addEventListener("click", GrowHandler);
-interaction2.addEventListener("animationend", GrowHandler);
+interaction2.addEventListener("click", GrowHandlerClick);
+interaction2.addEventListener("animationend", GrowHandlerClick);
 
-function GrowHandler() {
+function GrowHandlerClick() {
   interaction2.classList.toggle("grow");
 }
 
@@ -68,46 +68,46 @@ function FlyHandler() {
   interaction6.classList.toggle("fly");
 }
 
-/*=====Opdracht 7=====*/
+// /*=====Opdracht 7=====*/
 
 let interaction7 = document.querySelector("a:nth-of-type(6)");
 
-interaction7.addEventListener("mouseover", GrowHandler);
-interaction7.addEventListener("animationend", GrowHandler);
+interaction7.addEventListener("mouseenter", GrowHandlerEnter);
+interaction7.addEventListener("animationend", GrowHandlerEnter);
 
-function GrowHandler() {
+function GrowHandlerEnter() {
   interaction7.classList.toggle("grow");
 }
 
-/*=====Opdracht 8=====*/
+// /*=====Opdracht 8=====*/
 
 let interaction8 = document.querySelector("a:nth-of-type(7)");
 
-interaction8.addEventListener("mouseenter", GrowHandler);
-interaction8.addEventListener("animationend", GrowHandler);
+interaction8.addEventListener("mouseleave", GrowHandlerLeave);
+interaction8.addEventListener("animationend", GrowHandlerLeave);
 
-function GrowHandler() {
+function GrowHandlerLeave() {
   interaction8.classList.toggle("grow");
 }
 
-/*=====Opdracht 9=====*/
+// /*=====Opdracht 9=====*/
 
 let interaction9 = document.querySelector("a:nth-of-type(8)");
 
-interaction9.addEventListener("mouseleave", GrowHandler);
-interaction9.addEventListener("animationend", GrowHandler);
+interaction9.addEventListener("contextmenu", GrowHandlerMenu);
+interaction9.addEventListener("animationend", GrowHandlerMenu);
 
-function GrowHandler() {
+function GrowHandlerMenu() {
   interaction9.classList.toggle("grow");
 }
 
-/*=====Opdracht 10=====*/
+// /*=====Opdracht 10=====*/
 
 let interaction10 = document.querySelector("a:nth-of-type(9)");
 
-interaction10.addEventListener("focus", GrowHandler);
-interaction10.addEventListener("animationend", GrowHandler);
+interaction10.addEventListener("focus", GrowHandlerFocus);
+interaction10.addEventListener("animationend", GrowHandlerFocus);
 
-function GrowHandler() {
+function GrowHandlerFocus() {
   interaction10.classList.toggle("grow");
 }
